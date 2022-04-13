@@ -10,7 +10,7 @@ Math.SILVER_RATIO = 1 + Math.SQRT2;
 
 /**
  * Checks if a given number is an integer.
- * @param {number} number THe number to be checked.
+ * @param {number} number The number to be checked.
  * @returns `true` if the number is an integer, otherwise `false`.
  */
 Math.isInt = function(number) {
@@ -81,7 +81,7 @@ Math.factorial = function(n) {
 
 /**
  * Calculates the falling factorial of a positive integer *n* with *k* steps: `n!/(n-k)!`.
- * @param {number} n A positive
+ * @param {number} n A positive integer
  * @param {number} k The number of steps to fall
  * @returns Falling factorial of *n* with *k* steps. If `k > n` then 0 is returned.
  */
@@ -98,6 +98,12 @@ Math.fallingFactorial = function(n, k) {
     return Math.factorial(n) / Math.factorial(n - k);
 }
 
+/**
+ * Calculates the binomial coefficient of a positive integer *n* with *k* choices (*n* choose *k*): `n!/k!(n-k)!`.
+ * @param {number} n A positive integer
+ * @param {number} k The number of choices
+ * @returns The binomial coefficient of *n* and *k*.
+ */
 Math.binomialCoefficient = function(n, k) {
     if (typeof n != 'number') throw new TypeError('Expected number, got ' + typeof n + ' as first argument');
     if (!Math.isInt(n)) throw new TypeError('Expected a positive integer, got a floating-point number as first argument');

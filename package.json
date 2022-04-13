@@ -1,0 +1,16 @@
+{
+  "name": "mathextended",
+  "version": "1.0.0",
+  "description": "Adds more functions to the native Math class in JavaScript.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "author": "joker876",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+  }
+}
